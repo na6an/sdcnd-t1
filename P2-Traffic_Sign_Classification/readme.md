@@ -34,3 +34,20 @@ And the last graph is the number of sign counts in each class.
 <img src="https://github.com/na6an/SDCND/blob/master/P2/img/Picture5.png" alt="alt text" width="480" height="240">   
 
 In next cell, it returns index number of unique to each class, and randomly output one of signs.
+
+
+## II.Design and Test a Model ArchitecturePreprocessing  
+
+1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques?  
+Consider including images showing the output of each preprocessing technique.  
+Pre-processing refers to techniques such as converting to grayscale, normalization, etc.  
+There were only two types of preprocessing used -“grayscale” and “normalization.”  
+A few of different “grayscale” and “normalization” techniques were explored.  
+
+For example, some of techniques explored include:Weighted grayscale (explanation of specific figure found here:  
+https://samarthbhargav.wordpress.com/2014/05/05/image-processing-with-python-rgb-to-grayscale-conversion/)  
+Normalization of grayscale with min-max scaling at [0.1, 0.9]  
+
+In addition, grayscale conversion using cv2, PIL were also considered, but ended up using simple averaging of 
+RGB for grayscale and (x-128)/128 was used for normalization because other methods were either too slow or 
+seemed to somehow distort datasetsI suffered more than a week to fix.  
